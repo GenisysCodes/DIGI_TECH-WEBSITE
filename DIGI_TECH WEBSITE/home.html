@@ -1,0 +1,232 @@
+<!-- Home Section -->
+<section id="home">
+    <div class="home-content">
+        <!-- Hero Section -->
+        <div class="hero"></div> 
+            <div class="hero-text">
+                <h1 class="hero-title">Welcome to Digi_Tech</h1>
+                <p class="hero-subtitle">Crafting Digital Excellence</p>
+                <div class="cta-buttons" btn:hover ;>
+                    <a href="#about" class="cta-btn">Learn More</a>
+                    <a href="#contact" class="cta-btn outline">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="digi_tech logo.jpg" alt="Company Illustration">
+            </div>
+        </div>
+
+        <!-- Featured Content -->
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Fast & Reliable</h3>
+                <p>Lightning-fast performance with 99.9% uptime guarantee</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🛡</div>
+                <h3>Secure Solutions</h3>
+                <p>Enterprise-grade security for your peace of mind</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💡</div>
+                <h3>Innovative Approach</h3>
+                <p>Cutting-edge technology for modern challenges</p>
+            </div>
+        </div>
+
+        <!-- Statistics Banner -->
+        <div class="stats-banner">
+            <div class="stat-item">
+                <h4>beginners+</h4>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+                <h4>in progress</h4>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-item">
+                <h4>we deliver the best</h4>
+                <p>Client Satisfaction</p>
+            </div>
+        </div>
+
+        <!-- Client Showcase -->
+        <!--<div class="clients">
+            <h2>Trusted By</h2>
+            <div class="client-logos">
+                <img src="client1-logo.png" alt="Client 1">
+                <img src="client2-logo.png" alt="Client 2">
+                <img src="client3-logo.png" alt="Client 3">
+            </div>
+        </div>
+    </div>
+</section>-->
+
+<style>
+    /* Home Section Styles */
+    #home {
+        background :url(header.jpg) no-repeat center center fixed;
+       /* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);*/
+        padding: 100px 0;
+    }
+
+    .hero {
+        font-display: ;
+        padding: 100 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .hero-text {
+        flex: 1;
+        padding: 50px;
+    }
+
+    .hero-title {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 3.5rem;
+        color: #2d3436;
+        margin-bottom: 20px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+        color: #636e72;
+        margin-bottom: 30px;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .cta-btn {
+        padding: 15px 30px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .cta-btn {
+        background: #2d3436;
+        color: white;
+    }
+
+    .cta-btn.outline {
+        background: transparent;
+        border: 2px solid #2d3436;
+        color: #2d3436;
+    }
+
+    .cta-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .hero-image {
+        flex: 1;
+    }
+
+    .hero-image img {
+        padding: auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: 80px auto;
+        padding: 0 20px;
+    }
+
+    .feature-card {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .feature-icon {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .stats-banner {
+        background: #2d3436;
+        color: white;
+        padding: 60px 20px;
+        margin: 80px 0;
+    }
+
+    .stats-banner {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .stat-item h4 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .clients {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .client-logos {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .client-logos img {
+        height: 50px;
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+    }
+
+    .client-logos img:hover {
+        opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+        .hero {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero-text {
+            padding-right: 0;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            flex-direction: column;
+        }
+
+        .stats-banner {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+</style>
